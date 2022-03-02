@@ -24,12 +24,19 @@ ch_input = file(params.input, checkIfExists: true)
 if (ch_input.isEmpty()) {exit 1, "File provided with --input is empty: ${ch_input.getName()}!"}
 
 // Read in ids from --input file
-Channel
-    .from(file(params.input, checkIfExists: true))
-    .splitCsv(header:false, sep:'', strip:true)
-    .map { it[0] }
-    .unique()
-    .set { ch_ids }
+if (params.skip_runinfo) {
+    Channel
+        .fromPath(params.input, checkIfExists: true)
+        .splitCsv(header:true, sep:'\t', strip:true)
+        .set { ch_ids }
+} else {
+    Channel
+        .from(file(params.input, checkIfExists: true))
+        .splitCsv(header:false, sep:'', strip:true)
+        .map { it[0] }
+        .unique()
+        .set { ch_ids }
+}
 
 /*
 ========================================================================================

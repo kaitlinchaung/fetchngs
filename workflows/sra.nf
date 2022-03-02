@@ -53,17 +53,21 @@ workflow SRA {
     //
     // MODULE: Get SRA run information for public database ids
     //
-    SRA_IDS_TO_RUNINFO (
-        ids,
-        params.ena_metadata_fields ?: ''
-    )
-    ch_versions = ch_versions.mix(SRA_IDS_TO_RUNINFO.out.versions.first())
+    if (params.skip_runinfo) {
+        ch_tsv = ids
+    } else {
+        ch_tsv = SRA_IDS_TO_RUNINFO (
+            ids,
+            params.ena_metadata_fields ?: ''
+        ).tsv
+        ch_versions = ch_versions.mix(SRA_IDS_TO_RUNINFO.out.versions.first())
+    }
 
     //
     // MODULE: Parse SRA run information, create file containing FTP links and read into workflow as [ meta, [reads] ]
     //
     SRA_RUNINFO_TO_FTP (
-        SRA_IDS_TO_RUNINFO.out.tsv
+        ch_tsv
     )
     ch_versions = ch_versions.mix(SRA_RUNINFO_TO_FTP.out.versions.first())
 
