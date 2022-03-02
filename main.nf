@@ -46,7 +46,9 @@ if (params.skip_runinfo) {
 
 // Auto-detect input id type
 def input_type = ''
-if (WorkflowMain.isSraId(ch_input, log)) {
+if (params.skip_runinfo) {
+    input_type = 'sra'
+} else if (WorkflowMain.isSraId(ch_input, log)) {
     input_type = 'sra'
 } else if (WorkflowMain.isSynapseId(ch_input, log)) {
     input_type = 'synapse'
