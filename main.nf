@@ -27,7 +27,6 @@ if (ch_input.isEmpty()) {exit 1, "File provided with --input is empty: ${ch_inpu
 if (params.skip_runinfo) {
     Channel
         .fromPath(params.input, checkIfExists: true)
-        .splitCsv(header:true, sep:'\t', strip:true)
         .set { ch_ids }
 } else {
     Channel

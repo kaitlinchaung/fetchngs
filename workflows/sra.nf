@@ -50,31 +50,28 @@ workflow SRA {
     main:
     ch_versions = Channel.empty()
 
-    //
-    // MODULE: Get SRA run information for public database ids
-    //
     if (params.skip_runinfo) {
         ch_tsv = ids
     } else {
-        ch_tsv = SRA_IDS_TO_RUNINFO (
+        //
+        // MODULE: Get SRA run information for public database ids
+        //
+        SRA_IDS_TO_RUNINFO (
             ids,
             params.ena_metadata_fields ?: ''
-        ).tsv
+        )
         ch_versions = ch_versions.mix(SRA_IDS_TO_RUNINFO.out.versions.first())
+
+        //
+        // MODULE: Parse SRA run information, create file containing FTP links and read into workflow as [ meta, [reads] ]
+        //
+        ch_tsv = SRA_RUNINFO_TO_FTP (
+            SRA_IDS_TO_RUNINFO.out.tsv
+        )
+        ch_versions = ch_versions.mix(SRA_RUNINFO_TO_FTP.out.versions.first())
     }
 
-    //
-    // MODULE: Parse SRA run information, create file containing FTP links and read into workflow as [ meta, [reads] ]
-    //
-    SRA_RUNINFO_TO_FTP (
-        ch_tsv
-    )
-    ch_versions = ch_versions.mix(SRA_RUNINFO_TO_FTP.out.versions.first())
-
-    SRA_RUNINFO_TO_FTP
-        .out
-        .tsv
-        .splitCsv(header:true, sep:'\t')
+    ch_tsv.splitCsv(header:true, sep:'\t')
         .map {
             meta ->
                 meta.single_end = meta.single_end.toBoolean()
