@@ -83,7 +83,6 @@ workflow SRA {
             sra: !it[0].fastq_1 || params.force_sratools_download
         }
         .set { ch_sra_reads }
-    ch_versions = ch_versions.mix(SRA_RUNINFO_TO_FTP.out.versions.first())
 
     if (!params.skip_fastq_download) {
 
