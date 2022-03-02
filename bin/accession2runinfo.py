@@ -168,7 +168,7 @@ class RemoteFetcher:
         return rprog.Progress(
             rprog.TextColumn("[bold blue]{task.description}", justify="right"),
             rprog.BarColumn(bar_width=None),
-            "[progress.percentage]{task.completed}/{task.total}({task.percentage:>3.1f}%)",
+            "[progress.percentage]{task.completed:,}/{task.total:,}({task.percentage:>3.1f}%)",
             " ",
             rprog.TimeRemainingColumn(),
             " ",
