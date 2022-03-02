@@ -34,6 +34,7 @@ import argparse
 import asyncio
 import logging
 import re
+from csv import QUOTE_NONNUMERIC
 from dataclasses import dataclass
 from functools import partial
 from io import StringIO
@@ -487,7 +488,9 @@ def main(args: Optional[List[str]] = None) -> None:
     metadata: pd.DataFrame = asyncio.run(
         ExperimentAccessionService.fetch_runinfo(accessions)
     )
-    metadata.to_csv(args.file_out, sep="\t", header=True, index=False)
+    metadata.to_csv(
+        args.file_out, sep="\t", header=True, index=False, quoting=QUOTE_NONNUMERIC
+    )
 
 
 if __name__ == "__main__":
