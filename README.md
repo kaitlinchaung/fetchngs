@@ -54,7 +54,12 @@ Via a project id or single file of ids(provided one-per-line (see [example input
 4. Start running your own analysis!
 
     ```bash
-    nextflow run kaitlinchaung/fetchngs --input ids.txt -profile horence,conda
+    nextflow run kaitlinchaung/fetchngs \
+        --id_list ids.txt \
+        -profile horence,conda \
+        -latest \
+        -r master \
+        -resume
     ```
 
     Where `ids.txt` looks something like:
