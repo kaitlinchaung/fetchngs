@@ -18,7 +18,7 @@ WorkflowSra.initialise(params, log, valid_params)
     IMPORT LOCAL MODULES/SUBWORKFLOWS
 ========================================================================================
 */
-
+include { SRP_TO_SRR              } from '../modules/local/srp_to_srr'
 include { SRA_IDS_TO_RUNINFO      } from '../modules/local/sra_ids_to_runinfo'
 include { SRA_RUNINFO_TO_FTP      } from '../modules/local/sra_runinfo_to_ftp'
 include { SRA_FASTQ_FTP           } from '../modules/local/sra_fastq_ftp'
@@ -44,11 +44,35 @@ include { CUSTOM_DUMPSOFTWAREVERSIONS } from '../modules/nf-core/modules/custom/
 
 workflow SRA {
 
-    take:
-    ids // channel: [ ids ]
 
     main:
-    ch_versions = Channel.empty()
+
+    // Read in inputs to ch_ids
+    if (params.srp) {
+        //
+        // MODULE: Get SRR numbers from SRP project
+        //
+        SRP_TO_SRR (
+            params.srp
+        )
+
+        id_list = SRP_TO_SRR.out.ids
+
+    } else {
+        // use input id list
+        id_list = Channel.fromPath(params.id_list)
+
+    }
+
+    // Read in ids from SRR numbers
+    id_list
+        .splitCsv(
+            header: false,
+            sep: '',
+            strip:true
+        )
+        .map { it[0] }
+        .set { ids }
 
     //
     // MODULE: Get SRA run information for public database ids
@@ -57,7 +81,6 @@ workflow SRA {
         ids,
         params.ena_metadata_fields ?: ''
     )
-    ch_versions = ch_versions.mix(SRA_IDS_TO_RUNINFO.out.versions.first())
 
     //
     // MODULE: Parse SRA run information, create file containing FTP links and read into workflow as [ meta, [reads] ]
@@ -65,7 +88,18 @@ workflow SRA {
     SRA_RUNINFO_TO_FTP (
         SRA_IDS_TO_RUNINFO.out.tsv
     )
-    ch_versions = ch_versions.mix(SRA_RUNINFO_TO_FTP.out.versions.first())
+
+    // Concatenate all metadata files into 1 mega file
+    SRA_RUNINFO_TO_FTP.out.tsv
+        .map { file ->
+            file.text + '\n'
+        }
+        .collectFile (
+            name:       "metadata.tsv",
+            storeDir:   "${params.outdir}",
+            keepHeader: true,
+            skip:       1
+        )
 
     SRA_RUNINFO_TO_FTP
         .out
@@ -82,7 +116,6 @@ workflow SRA {
             sra: !it[0].fastq_1 || params.force_sratools_download
         }
         .set { ch_sra_reads }
-    ch_versions = ch_versions.mix(SRA_RUNINFO_TO_FTP.out.versions.first())
 
     if (!params.skip_fastq_download) {
 
@@ -92,7 +125,6 @@ workflow SRA {
         SRA_FASTQ_FTP (
             ch_sra_reads.ftp
         )
-        ch_versions = ch_versions.mix(SRA_FASTQ_FTP.out.versions.first())
 
         //
         // SUBWORKFLOW: Download sequencing reads without FTP links using sra-tools.
@@ -100,43 +132,9 @@ workflow SRA {
         SRA_FASTQ_SRATOOLS (
             ch_sra_reads.sra.map { meta, reads -> [ meta, meta.run_accession ] }
         )
-        ch_versions = ch_versions.mix(SRA_FASTQ_SRATOOLS.out.versions.first())
 
-        //
-        // MODULE: Stage FastQ files downloaded by SRA together and auto-create a samplesheet
-        //
-        SRA_TO_SAMPLESHEET (
-            SRA_FASTQ_FTP.out.fastq.mix(SRA_FASTQ_SRATOOLS.out.reads),
-            params.nf_core_pipeline ?: '',
-            params.sample_mapping_fields
-        )
-
-        //
-        // MODULE: Create a merged samplesheet across all samples for the pipeline
-        //
-        SRA_MERGE_SAMPLESHEET (
-            SRA_TO_SAMPLESHEET.out.samplesheet.collect{it[1]},
-            SRA_TO_SAMPLESHEET.out.mappings.collect{it[1]}
-        )
-        ch_versions = ch_versions.mix(SRA_MERGE_SAMPLESHEET.out.versions)
-
-        //
-        // MODULE: Create a MutiQC config file with sample name mappings
-        //
-        if (params.sample_mapping_fields) {
-            MULTIQC_MAPPINGS_CONFIG (
-                SRA_MERGE_SAMPLESHEET.out.mappings
-            )
-            ch_versions = ch_versions.mix(MULTIQC_MAPPINGS_CONFIG.out.versions)
-        }
     }
 
-    //
-    // MODULE: Dump software versions for all tools used in the workflow
-    //
-    // CUSTOM_DUMPSOFTWAREVERSIONS (
-    //     ch_versions.unique().collectFile(name: 'collated_versions.yml')
-    // )
 }
 
 /*

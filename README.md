@@ -15,7 +15,6 @@
 [![Watch on YouTube](http://img.shields.io/badge/youtube-nf--core-FF0000?labelColor=000000&logo=youtube)](https://www.youtube.com/c/nf-core)
 
 ## Introduction
-test
 
 **nf-core/fetchngs** is a bioinformatics pipeline to fetch metadata and raw FastQ files from both public and private databases. At present, the pipeline supports SRA / ENA / DDBJ / GEO / Synapse ids (see [usage docs](https://nf-co.re/fetchngs/usage#introduction)).
 
@@ -25,7 +24,7 @@ On release, automated continuous integration tests run the pipeline on a full-si
 
 ## Pipeline summary
 
-Via a single file of ids, provided one-per-line (see [example input file](https://raw.githubusercontent.com/nf-core/test-datasets/fetchngs/sra_ids_test.txt)) the pipeline performs the following steps:
+Via a project id or single file of ids(provided one-per-line (see [example input file](https://raw.githubusercontent.com/nf-core/test-datasets/fetchngs/sra_ids_test.txt)), the pipeline performs the following steps:
 
 ### SRA / ENA / DDBJ / GEO ids
 
@@ -34,18 +33,7 @@ Via a single file of ids, provided one-per-line (see [example input file](https:
 3. Download FastQ files:
     - If direct download links are available from the ENA API, fetch in parallel via `curl` and perform `md5sum` check
     - Otherwise use [`sra-tools`](https://github.com/ncbi/sra-tools) to download `.sra` files and convert them to FastQ
-4. Collate id metadata and paths to FastQ files in a single samplesheet
 
-### Synapse ids
-
-1. Resolve Synapse directory ids to their corresponding FastQ files ids via the `synapse list` command.
-2. Retrieve FastQ file metadata including FastQ file names, md5sums, etags, annotations and other data provenance via the `synapse show` command.
-3. Download FastQ files in parallel via `synapse get`
-4. Collate paths to FastQ files in a single samplesheet
-
-### Samplesheet format
-
-The columns in the auto-created samplesheet can be tailored to be accepted out-of-the-box by selected nf-core pipelines, these currently include [nf-core/rnaseq](https://nf-co.re/rnaseq/usage#samplesheet-input) and the Illumina processing mode of [nf-core/viralrecon](https://nf-co.re/viralrecon/usage#illumina-samplesheet-format). You can use the `--nf_core_pipeline` parameter to customise this behaviour e.g. `--nf_core_pipeline rnaseq`. More pipelines will be supported in due course as we adopt and standardise samplesheet input across nf-core.
 
 ## Quick Start
 
@@ -56,7 +44,7 @@ The columns in the auto-created samplesheet can be tailored to be accepted out-o
 3. Download the pipeline and test it on a minimal dataset with a single command:
 
     ```bash
-    nextflow run nf-core/fetchngs -profile test,<docker/singularity/podman/shifter/charliecloud/conda/institute>
+    nextflow run kaitlinchaung/fetchngs -profile test,horence,conda
     ```
 
     > - Please check [nf-core/configs](https://github.com/nf-core/configs#documentation) to see if a custom config file to run nf-core pipelines already exists for your Institute. If so, you can simply use `-profile <institute>` in your command. This will enable either `docker` or `singularity` and set the appropriate execution settings for your local compute environment.
@@ -66,9 +54,16 @@ The columns in the auto-created samplesheet can be tailored to be accepted out-o
 4. Start running your own analysis!
 
     ```bash
-    nextflow run nf-core/fetchngs --input ids.txt -profile <docker/singularity/podman/shifter/charliecloud/conda/institute>
+    nextflow run kaitlinchaung/fetchngs --input ids.txt -profile horence,conda
     ```
 
+    Where `ids.txt` looks something like:
+    ```
+    SRR7993771
+    SRR7993772
+    SRR7993773
+    SRR7993774
+    ```
 ## Documentation
 
 The nf-core/fetchngs pipeline comes with documentation about the pipeline [usage](https://nf-co.re/fetchngs/usage), [parameters](https://nf-co.re/fetchngs/parameters) and [output](https://nf-co.re/fetchngs/output).
