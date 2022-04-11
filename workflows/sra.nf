@@ -96,7 +96,7 @@ workflow SRA {
         }
         .collectFile (
             name:       "metadata.tsv",
-            storeDir:   "${params.outdir}",
+            storeDir:   "${params.outdir}/metadata",
             keepHeader: true,
             skip:       1
         )
