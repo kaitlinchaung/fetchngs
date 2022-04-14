@@ -1,0 +1,141 @@
+N E X T F L O W  ~  version 21.10.6
+Launching `main.nf` [modest_kirch] - revision: a5359387b8
+[-        ] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR -
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_IDS... -
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_RUN... -
+
+[-        ] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR -
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_IDS... -
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_RUN... -
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... -
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... -
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/3k4W7Wvdgi2pTR
+[-        ] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR -
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_IDS... -
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_RUN... -
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... -
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... -
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/3k4W7Wvdgi2pTR
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1
+[68/a1baca] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 1 of 1, cached: 1
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_RUN... -
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... -
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... -
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/3k4W7Wvdgi2pTR
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[51/6da136] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 9 of 9, cached: 9
+[57/a28698] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 4 of 4, cached: 4
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... -
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... -
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/3k4W7Wvdgi2pTR
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[6d/2ca1f1] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 21 of 21, cached: 21
+[f1/1ff7e7] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 17 of 17, cached: 17
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... -
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... -
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/3k4W7Wvdgi2pTR
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[6c/08494d] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 21 of 21, cached: 21
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 2
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... -
+Error executing process > 'NFCORE_FETCHNGS:SRA:SRA_FASTQ_SRATOOLS:SRATOOLS_PREFETCH (SRR17867641)'
+
+Caused by:
+  Process requirement exceed available CPUs -- req: 2; avail: 1
+
+Command executed:
+
+  eval "$(vdb-config -o n NCBI_SETTINGS | sed 's/[" ]//g')"
+  if [[ ! -f "${NCBI_SETTINGS}" ]]; then
+      mkdir -p "$(dirname "${NCBI_SETTINGS}")"
+      printf '/LIBS/GUID = "38495e48-80b4-48ea-a33f-7f0c27658a40"\n/libs/cloud/report_instance_identity = "true"\n' > "${NCBI_SETTINGS}"
+  fi
+  
+  prefetch \
+      --force all \
+       \
+      SRR17867641
+  
+  cat <<-END_VERSIONS > versions.yml
+  "NFCORE_FETCHNGS:SRA:SRA_FASTQ_SRATOOLS:SRATOOLS_PREFETCH":
+      sratools: $(prefetch --version 2>&1 | grep -Eo '[0-9.]+')
+  END_VERSIONS
+
+Command exit status:
+  -
+
+Command output:
+  (empty)
+
+Work dir:
+  /scratch/groups/horence/kaitlin/testing/work/8c/4a7a4acc6883a45b070410ddd30035
+
+Tip: when you have fixed the problem you can continue the execution adding the option `-resume` to the run command line
+
+
+[bf/62a093] Cached process > NFCORE_FETCHNGS:SRA:SRA_RUNINFO_TO_FTP (27)
+-[nf-core/fetchngs] Pipeline completed with errors-
+WARN: =============================================================================
+  Please double-check the samplesheet that has been auto-created by the pipeline.
+
+  Public databases don't reliably hold information such as strandedness
+  information, controls etc
+
+  All of the sample metadata obtained from the ENA has been appended
+  as additional columns to help you manually curate the samplesheet before
+  running nf-core/other pipelines.
+===================================================================================
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/3k4W7Wvdgi2pTR
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[bf/62a093] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 6
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... -
+Error executing process > 'NFCORE_FETCHNGS:SRA:SRA_FASTQ_SRATOOLS:SRATOOLS_PREFETCH (SRR17867641)'
+
+Caused by:
+  Process requirement exceed available CPUs -- req: 2; avail: 1
+
+Command executed:
+
+  eval "$(vdb-config -o n NCBI_SETTINGS | sed 's/[" ]//g')"
+  if [[ ! -f "${NCBI_SETTINGS}" ]]; then
+      mkdir -p "$(dirname "${NCBI_SETTINGS}")"
+      printf '/LIBS/GUID = "38495e48-80b4-48ea-a33f-7f0c27658a40"\n/libs/cloud/report_instance_identity = "true"\n' > "${NCBI_SETTINGS}"
+  fi
+  
+  prefetch \
+      --force all \
+       \
+      SRR17867641
+  
+  cat <<-END_VERSIONS > versions.yml
+  "NFCORE_FETCHNGS:SRA:SRA_FASTQ_SRATOOLS:SRATOOLS_PREFETCH":
+      sratools: $(prefetch --version 2>&1 | grep -Eo '[0-9.]+')
+  END_VERSIONS
+
+Command exit status:
+  -
+
+Command output:
+  (empty)
+
+Work dir:
+  /scratch/groups/horence/kaitlin/testing/work/8c/4a7a4acc6883a45b070410ddd30035
+
+Tip: when you have fixed the problem you can continue the execution adding the option `-resume` to the run command line
+
+
+WARN: Failed to render execution report -- see the log file for details
+java.nio.channels.ClosedByInterruptException
+
+
+WARN: To render the execution DAG in the required format it is required to install Graphviz -- See http://www.graphviz.org for more info.
+

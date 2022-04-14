@@ -4,16 +4,13 @@ process SRATOOLS_PREFETCH {
     label 'process_low'
     label 'error_retry'
 
-    conda (params.enable_conda ? 'bioconda::sra-tools=2.11.0' : null)
-    container "${ workflow.containerEngine == 'singularity' && !task.ext.singularity_pull_docker_container ?
-        'https://depot.galaxyproject.org/singularity/sra-tools:2.11.0--pl5262h314213e_0' :
-        'quay.io/biocontainers/sra-tools:2.11.0--pl5262h314213e_0' }"
+    container "ncbi/sra-tools:3.0.0"
 
     input:
     tuple val(meta), val(id)
 
     output:
-    tuple val(meta), path("$id"), emit: sra
+    tuple val(meta), val(id)    , emit: sra
     path "versions.yml"         , emit: versions
 
     script:
@@ -26,12 +23,10 @@ process SRATOOLS_PREFETCH {
         printf '${config}' > "\${NCBI_SETTINGS}"
     fi
 
-    retry_with_backoff.sh prefetch \\
+    prefetch \\
+        --force all \\
         $args \\
-        --progress \\
         $id
-
-    vdb-validate $id
 
     cat <<-END_VERSIONS > versions.yml
     "${task.process}":

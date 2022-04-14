@@ -117,21 +117,25 @@ workflow SRA {
         }
         .set { ch_sra_reads }
 
+
     if (!params.skip_fastq_download) {
 
-        //
-        // MODULE: If FTP link is provided in run information then download FastQ directly via FTP and validate with md5sums
-        //
-        SRA_FASTQ_FTP (
-            ch_sra_reads.ftp
-        )
+        if (params.unaligned) {
+            //
+            // SUBWORKFLOW: Download sequencing reads without FTP links using sra-tools.
+            //
+            SRA_FASTQ_SRATOOLS (
+                ch_sra_reads.sra.map { meta, reads -> [ meta, meta.run_accession ] }
+            )
 
-        //
-        // SUBWORKFLOW: Download sequencing reads without FTP links using sra-tools.
-        //
-        SRA_FASTQ_SRATOOLS (
-            ch_sra_reads.sra.map { meta, reads -> [ meta, meta.run_accession ] }
-        )
+        } else {
+            //
+            // MODULE: If FTP link is provided in run information then download FastQ directly via FTP and validate with md5sums
+            //
+            SRA_FASTQ_FTP (
+                ch_sra_reads.ftp
+            )
+        }
 
     }
 

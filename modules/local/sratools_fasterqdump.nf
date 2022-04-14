@@ -3,13 +3,10 @@ process SRATOOLS_FASTERQDUMP {
     tag "$meta.id"
     label 'process_medium'
 
-    conda (params.enable_conda ? 'bioconda::sra-tools=2.11.0 conda-forge::pigz=2.6' : null)
-    container "${ workflow.containerEngine == 'singularity' && !task.ext.singularity_pull_docker_container ?
-        'https://depot.galaxyproject.org/singularity/mulled-v2-5f89fe0cd045cb1d615630b9261a1d17943a9b6a:6a9ff0e76ec016c3d0d27e0c0d362339f2d787e6-0' :
-        'quay.io/biocontainers/mulled-v2-5f89fe0cd045cb1d615630b9261a1d17943a9b6a:6a9ff0e76ec016c3d0d27e0c0d362339f2d787e6-0' }"
+    container "ncbi/sra-tools:3.0.0"
 
     input:
-    tuple val(meta), path(sra)
+    tuple val(meta), val(id)
 
     output:
     tuple val(meta), path(fastq_output), emit: reads
@@ -32,10 +29,11 @@ process SRATOOLS_FASTERQDUMP {
         printf '${config}' > "\${NCBI_SETTINGS}"
     fi
 
-    fasterq-dump \\
+    fastq-dump \\
         $args \\
-        --threads $task.cpus \\
-        ${sra.name}
+        ${id} \\
+        --split-3 \\
+        --unaligned
 
     pigz \\
         $args2 \\
@@ -44,18 +42,18 @@ process SRATOOLS_FASTERQDUMP {
         *.fastq
 
     ## Rename FastQ files by meta.id
-    if [ -f  ${sra.name}.fastq.gz ]; then
-        mv ${sra.name}.fastq.gz ${meta.id}.fastq.gz
+    if [ -f  ${id}.fastq.gz ]; then
+        mv ${id}.fastq.gz ${meta.id}.fastq.gz
         md5sum ${meta.id}.fastq.gz > ${meta.id}.fastq.gz.md5
     fi
 
-    if [ -f  ${sra.name}_1.fastq.gz ]; then
-        mv ${sra.name}_1.fastq.gz ${meta.id}_1.fastq.gz
+    if [ -f  ${id}_1.fastq.gz ]; then
+        mv ${id}_1.fastq.gz ${meta.id}_1.fastq.gz
         md5sum ${meta.id}_1.fastq.gz > ${meta.id}_1.fastq.gz.md5
     fi
 
-    if [ -f  ${sra.name}_2.fastq.gz ]; then
-        mv ${sra.name}_2.fastq.gz ${meta.id}_2.fastq.gz
+    if [ -f  ${id}_2.fastq.gz ]; then
+        mv ${id}_2.fastq.gz ${meta.id}_2.fastq.gz
         md5sum ${meta.id}_2.fastq.gz > ${meta.id}_2.fastq.gz.md5
     fi
 

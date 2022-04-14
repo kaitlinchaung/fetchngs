@@ -1,0 +1,498 @@
+N E X T F L O W  ~  version 21.10.6
+Launching `main.nf` [special_celsius] - revision: a5359387b8
+[-        ] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR -
+
+[-        ] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR -
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_IDS... -
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_RUN... -
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... -
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... -
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+[-        ] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR -
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_IDS... -
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_RUN... -
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... -
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... -
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1
+[68/a1baca] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 1 of 1, cached: 1
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_RUN... -
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... -
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... -
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[76/279fa7] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 8 of 8, cached: 8
+[a9/c083a3] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 5 of 5, cached: 5
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... -
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... -
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[aa/4f5331] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 20 of 20, cached: 20
+[19/84896c] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 14 of 14, cached: 14
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... -
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... -
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[6d/b09743] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 23 of 23, cached: 23
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... -
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... -
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 4
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... -
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 22
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... -
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (1)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[ba/5792ef] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 29
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... -
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (3)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[8d/2d153a] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 29
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... -
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (4)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[84/e87502] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 29
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... -
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (6)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[af/f12459] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 29
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... -
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (7)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[04/3beae3] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 29
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... -
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (8)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[af/e8d9c5] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 29
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... -
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (9)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[00/90b727] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 29
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... -
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (11)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[a6/ab6d35] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 29
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... -
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (12)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[63/a076fa] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 29
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... -
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (15)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[df/2bcf88] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 29
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... -
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (17)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[53/ca1d9e] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 29
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... -
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (18)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[60/bd1b46] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 29
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... -
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (20)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[1e/b5f9da] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 29
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... -
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (21)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[42/2c1614] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 29
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... -
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (23)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[6f/14e1da] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 29
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... -
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (25)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[03/b2a92b] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 29
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... -
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (26)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[b1/4e45ae] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 29
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... -
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (27)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[88/08029c] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 29
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... -
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (29)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[bd/f272ac] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 29
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... -
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (29)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[bd/f272ac] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 29
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... -
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (29)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[bd/f272ac] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 29
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... -
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (29)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[bd/f272ac] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 29
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... -
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (29)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[bd/f272ac] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 29
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... -
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (29)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[bd/f272ac] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 29
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 1
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (29)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[b1/4e45ae] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  3%] 1 of 29
+[-        ] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 1
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (30)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[b1/4e45ae] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  3%] 1 of 29
+[4d/286089] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 1
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (30)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[61/063658] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  6%] 2 of 29
+[4d/286089] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 2
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (31)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[61/063658] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  6%] 2 of 29
+[42/9525e6] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 2
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (31)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[48/2a4d2c] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [ 10%] 3 of 29
+[42/9525e6] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 3
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (32)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[48/2a4d2c] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [ 10%] 3 of 29
+[b2/8a83a4] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 3
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (32)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[48/2a4d2c] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [ 10%] 3 of 29
+[b2/8a83a4] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 3
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (33)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[6f/14e1da] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [ 13%] 4 of 29
+[d0/6b6a11] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 4
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (34)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[53/f55030] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [ 17%] 5 of 29
+[a2/b4b7d3] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 5
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (34)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[53/f55030] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [ 17%] 5 of 29
+[a2/b4b7d3] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 6
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (34)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[d5/415cba] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [ 20%] 6 of 29
+[a2/b4b7d3] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 6
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (35)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[d5/415cba] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [ 20%] 6 of 29
+[ad/89a8a2] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 6
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (35)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[d5/415cba] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [ 20%] 6 of 29
+[ad/89a8a2] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 6
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (35)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[df/2bcf88] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [ 24%] 7 of 29
+[ad/89a8a2] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 7
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (36)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[df/2bcf88] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [ 24%] 7 of 29
+[15/b3cbd3] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 7
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (36)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[df/2bcf88] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [ 24%] 7 of 29
+[15/b3cbd3] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 8
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (37)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[88/08029c] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [ 27%] 8 of 29
+[16/4a81a4] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 8
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (37)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[88/08029c] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [ 27%] 8 of 29
+[16/4a81a4] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 8
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (37)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[88/08029c] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [ 27%] 8 of 29
+[16/4a81a4] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 8
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (37)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[88/08029c] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [ 27%] 8 of 29
+[16/4a81a4] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 8
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (38)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[53/ca1d9e] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [ 31%] 9 of 29
+[79/2829f9] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 9
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (38)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[53/ca1d9e] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [ 31%] 9 of 29
+[79/2829f9] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 10
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (39)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[53/ca1d9e] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [ 31%] 9 of 29
+[4a/92b0a3] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 10
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (39)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[1e/b5f9da] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [ 34%] 10 of 29
+[4a/92b0a3] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 10
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (39)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[1e/b5f9da] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [ 34%] 10 of 29
+[4a/92b0a3] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 10
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (39)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[1e/b5f9da] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [ 34%] 10 of 29
+[4a/92b0a3] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 11
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (40)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[1e/b5f9da] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [ 34%] 10 of 29
+[3a/68e4c4] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 11
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (40)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[bd/f272ac] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [ 37%] 11 of 29
+[3a/68e4c4] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 11
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (40)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[42/2c1614] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [ 41%] 12 of 29
+[3a/68e4c4] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 12
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (41)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[42/2c1614] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [ 41%] 12 of 29
+[6c/98da25] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 12
+
+Monitor the execution with Nextflow Tower using this url https://tower.nf/user/kaitlinchaung/watch/2vH9gOxqwVpBWg
+executor >  slurm (41)
+[ca/756949] process > NFCORE_FETCHNGS:SRA:SRP_TO_SRR [100%] 1 of 1, cached: 1 ✔
+[1f/7c076f] process > NFCORE_FETCHNGS:SRA:SRA_IDS... [100%] 29 of 29, cached:...
+[14/6f6553] process > NFCORE_FETCHNGS:SRA:SRA_RUN... [100%] 29 of 29, cached:...
+[42/2c1614] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [ 41%] 12 of 29
+[6c/98da25] process > NFCORE_FETCHNGS:SRA:SRA_FAS... [  0%] 0 of 12

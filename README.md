@@ -69,6 +69,19 @@ Via a project id or single file of ids(provided one-per-line (see [example input
     SRR7993773
     SRR7993774
     ```
+
+# Downloading unaligned reads only
+```bash
+    nextflow run kaitlinchaung/fetchngs \
+        --srp SRPXXXXXX \
+        -profile horence,conda \
+        -latest \
+        -r master \
+        -resume \
+        --unaligned true \
+        --force_sratools_download true
+```
+
 ## Documentation
 
 The nf-core/fetchngs pipeline comes with documentation about the pipeline [usage](https://nf-co.re/fetchngs/usage), [parameters](https://nf-co.re/fetchngs/parameters) and [output](https://nf-co.re/fetchngs/output).
