@@ -74,6 +74,10 @@ workflow SRA {
         .map { it[0] }
         .set { ids }
 
+    if (params.num_samples) {
+        ids = ids.take(params.num_samples)
+    }
+
     //
     // MODULE: Get SRA run information for public database ids
     //
