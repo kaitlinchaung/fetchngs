@@ -33,7 +33,7 @@ process SRATOOLS_FASTERQDUMP {
         $args \\
         ${id} \\
         --split-3 \\
-        --unaligned
+        -X 5000000
 
     pigz \\
         $args2 \\

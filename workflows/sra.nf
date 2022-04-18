@@ -124,10 +124,11 @@ workflow SRA {
 
     if (!params.skip_fastq_download) {
 
-        if (params.unaligned) {
+        if (params.num_reads) {
             //
             // SUBWORKFLOW: Download sequencing reads without FTP links using sra-tools.
             //
+
             SRA_FASTQ_SRATOOLS (
                 ch_sra_reads.sra.map { meta, reads -> [ meta, meta.run_accession ] }
             )

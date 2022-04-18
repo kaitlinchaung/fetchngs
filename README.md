@@ -70,7 +70,7 @@ Via a project id or single file of ids(provided one-per-line (see [example input
     SRR7993774
     ```
 
-# Downloading unaligned reads only
+# Downloading a specific number of reads
 ```bash
     nextflow run kaitlinchaung/fetchngs \
         --srp SRPXXXXXX \
@@ -78,7 +78,7 @@ Via a project id or single file of ids(provided one-per-line (see [example input
         -latest \
         -r master \
         -resume \
-        --unaligned true \
+        --num_reads XX \
         --force_sratools_download true
 ```
 

@@ -19,7 +19,9 @@ workflow SRA_FASTQ_SRATOOLS {
     //
     // Convert the SRA format into one or more compressed FASTQ files.
     //
-    SRATOOLS_FASTERQDUMP ( SRATOOLS_PREFETCH.out.sra )
+    SRATOOLS_FASTERQDUMP (
+        sra_ids
+    )
 
     emit:
     reads    = SRATOOLS_FASTERQDUMP.out.reads  // channel: [ val(meta), [ reads ] ]
