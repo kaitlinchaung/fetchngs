@@ -52,11 +52,12 @@ workflow SRA {
         //
         // MODULE: Get SRR numbers from SRP project
         //
-        SRP_TO_SRR (
-            params.srp
-        )
+        id_list = Channel
+            .fromSRA(params.srp)
+            .map{it[0]}
+            .flatten()
+            .view()
 
-        id_list = SRP_TO_SRR.out.ids
 
     } else {
         // use input id list

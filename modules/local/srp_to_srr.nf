@@ -4,6 +4,10 @@ process SRP_TO_SRR {
 
     conda (params.enable_conda ? "conda-forge::python=3.9.7 bioconda::pysradb" : null)
 
+    container "${ workflow.containerEngine == 'singularity' && !task.ext.singularity_pull_docker_container ?
+        "kaitlinchaung/pysradb:v0.1" :
+        "kaitlinchaung/pysradb:v0.1" }"
+
     input:
     val srp
 

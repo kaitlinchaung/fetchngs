@@ -41,7 +41,7 @@ Via a project id or single file of ids(provided one-per-line (see [example input
 
 2. Install any of [`Docker`](https://docs.docker.com/engine/installation/), [`Singularity`](https://www.sylabs.io/guides/3.0/user-guide/), [`Podman`](https://podman.io/), [`Shifter`](https://nersc.gitlab.io/development/shifter/how-to-use/) or [`Charliecloud`](https://hpc.github.io/charliecloud/) for full pipeline reproducibility _(please only use [`Conda`](https://conda.io/miniconda.html) as a last resort; see [docs](https://nf-co.re/usage/configuration#basic-configuration-profiles))_
 
-3. Download the pipeline and test it on a minimal dataset with a single command:
+3. (ignore) Download the pipeline and test it on a minimal dataset with a single command:
 
     ```bash
     nextflow run kaitlinchaung/fetchngs -profile test,horence,conda
@@ -53,13 +53,30 @@ Via a project id or single file of ids(provided one-per-line (see [example input
 
 4. Start running your own analysis!
 
+Use the `--num_reads` parameter to define how many reads you want to download.
+Use the `--num_samples` parameter to define how many samples you want to download.
+    OPTION 1:
     ```bash
     nextflow run kaitlinchaung/fetchngs \
         --id_list ids.txt \
-        -profile horence,conda \
+        -profile horence,singularity \
         -latest \
         -r master \
-        -resume
+        -resume \
+        --num_reads 4000000 \
+        --num_samples 20
+    ```
+
+    OPTION 2:
+    ```bash
+    nextflow run kaitlinchaung/fetchngs \
+        --id_list ids.txt \
+        -profile horence,singularity \
+        -latest \
+        -r master \
+        -resume \
+        --num_reads 4000000 \
+        --num_samples 20
     ```
 
     Where `ids.txt` looks something like:
@@ -70,17 +87,6 @@ Via a project id or single file of ids(provided one-per-line (see [example input
     SRR7993774
     ```
 
-# Downloading a specific number of reads
-```bash
-    nextflow run kaitlinchaung/fetchngs \
-        --srp SRPXXXXXX \
-        -profile horence,conda \
-        -latest \
-        -r master \
-        -resume \
-        --num_reads XX \
-        --force_sratools_download true
-```
 
 ## Documentation
 
